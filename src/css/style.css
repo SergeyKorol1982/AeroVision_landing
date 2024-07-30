@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'WorkSans-Bold';
+    src: local('WorkSans-Bold'), url('../fonts/WorkSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+}
+
+@font-face {
+    font-family: 'WorkSans-ExtraBold';
+    src: local('WorkSans-ExtraBold'), url('../fonts/WorkSans-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    line-height: normal;
+}
+
+@font-face {
+    font-family: 'WorkSans-Medium';
+    src: local('WorkSans-Medium'), url('../fonts/WorkSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+}
+
+@font-face {
+    font-family: 'WorkSans-Regular';
+    src: local('WorkSans-Regular'), url('../fonts/WorkSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+}
+
+@font-face {
+    font-family: 'WorkSans-SemiBold';
+    src: local('WorkSans-SemiBold'), url('../fonts/WorkSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+}
+
+:root {
+    --primary-blue: #0077ff;
+    --primary-white: #FFFFFF;
+    --black-text-2: #222222;
+    --black-text-3: #333333;
+    --stars: #FFB400;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*"Header start"*/
+/*"Header end"*/
+
+/*"About me start"*/
+/*"About me end"*/
+
+/*"Services start"*/
+/*"Services end"*/
+
+/*"Milestones start"*/
+/*"Milestones end"*/
+
+/*"Our projects start"*/
+/*"Our projects end"*/
+
+/*"Testimonials start"*/
+/*"Testimonials end"*/
+
+/*"Contact me start"*/
+/*"Contact me end"*/
+
+/*"Footer start"*/
+/*"Footer end"*/
+/*=============================================================*/
+/*------------------------ @ media 1024 ----------------------------*/
+@media (min-width: 1024px) {
+
+    /*"Header start"*/
+    /*"Header end"*/
+
+    /*"About me start"*/
+    /*"About me end"*/
+
+    /*"Services start"*/
+    /*"Services end"*/
+
+    /*"Milestones start"*/
+    /*"Milestones end"*/
+
+    /*"Our projects start"*/
+    /*"Our projects end"*/
+
+    /*"Testimonials start"*/
+    /*"Testimonials end"*/
+
+    /*"Contact me start"*/
+    /*"Contact me end"*/
+
+    /*"Footer start"*/
+    /*"Footer end"*/
+
+}
