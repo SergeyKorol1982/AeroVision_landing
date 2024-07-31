@@ -53,11 +53,92 @@
     padding: 0;
     box-sizing: border-box;
 }
+h2 {
+    font-family: 'WorkSans-Bold';
+    font-size: 50px;
+    line-height: 50px;
+}
+
+h3 {
+    font-family: 'WorkSans-SemiBold';
+    font-size: 20px;
+}
 
 /*"Header start"*/
 /*"Header end"*/
 
 /*"About me start"*/
+#about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-me .about-me__photo .about-me__victor {
+    width: 350px;
+    border-radius: 300px;
+    border: solid 1px #F2F2F2; 
+}
+
+#about-me .about-me__text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+#about-me .about-me__text-block .about-me__h2_blue {
+    color: var(--primary-blue);
+}
+
+#about-me .about-me__text-block .about-me__skills {
+    font-family: 'WorkSans-Regular';
+    font-size: 20px;
+}
+
+#about-me .about-me__text-block .about-me__hire {
+    width: 370px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--primary-blue);
+}
+
+#about-me .about-me__text-block .about-me__button_block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#about-me .about-me__text-block .about-me__button_block .about-me__hire .about-me__hire_text {
+    font-family: 'WorkSans-Regular';
+    font-size: 20px;
+    color: var(--primary-white);
+    text-align: center;
+}
+
+#about-me .about-me__text-block .about-me__button_block  .about-me__cv {
+    width: 370px;
+    height: 50px;
+    border-radius: 50px;
+    border: solid 1px var(--primary-blue);
+    background-color: var(--primary-white);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+#about-me .about-me__text-block .about-me__cv .about-me__cv_text {
+    font-family: 'WorkSans-SemiBold';
+    font-size: 20px;
+    color: var(--primary-blue);
+}
+
+#about-me .about-me__text-block .about-me__cv .about-me__cv_download {
+    margin: 0px 0px 0px 10px;
+}
 /*"About me end"*/
 
 /*"Services start"*/
@@ -85,6 +166,36 @@
     /*"Header end"*/
 
     /*"About me start"*/
+    #about-me {
+        flex-direction: row-reverse;
+        gap: 50px;
+    }
+
+    #about-me .about-me__text-block {
+        width: 460px;
+
+    }    
+
+    #about-me .about-me__photo .about-me__victor {
+        width: 450px;
+        height: 459px;
+    }
+
+    #about-me .about-me__text-block {
+        align-items: flex-start;
+    }
+
+    #about-me .about-me__text-block .about-me__button_block {
+        flex-direction: row;
+    }
+
+    #about-me .about-me__text-block .about-me__hire {
+        width: 160px;
+    }
+
+    #about-me .about-me__text-block .about-me__button_block  .about-me__cv {
+        width: 240px;
+    }
     /*"About me end"*/
 
     /*"Services start"*/
