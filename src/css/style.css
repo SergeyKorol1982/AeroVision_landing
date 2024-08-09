@@ -251,6 +251,158 @@ h3 {
 /*"About end"*/
 
 /*"Services start"*/
+#services .services__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#services .services__top .services__top_text_h3 {
+    font-family: 'WorkSans-SemiBold';
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: var(--primary-blue);
+} 
+
+#services .services__top .services__top_text_h2 {
+    font-family: 'WorkSans-Bold';
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+#services .services__top .services__top_text {
+    font-family: 'WorkSans-Regular';
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+
+#services .services__swiper .services__buttons {
+    height: 50px;
+}
+
+#services .swiper-horizontal {
+    padding: 40px 0 0 0;
+}
+
+#services .services__swiper .services__buttons .swiper-button-next {
+    color: var(--primary-white);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: solid 1px var(--primary-blue);
+    content: url(../images/services/Arrow\ 1.png);
+    top: auto;
+}
+
+#services .services__swiper .services__buttons .swiper-button-prev {
+    color: var(--primary-white);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: solid 1px var(--primary-blue);
+    content: url(../images/services/Arrow\ 1.png);
+    top: auto;
+}
+
+#services .services__swiper .swiper-wrapper .swiper-slide .services__card {
+    width: 370px;
+    height: 366px;
+    background-color: var(--primary-white);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border: 1px solid gray;
+}
+
+#services .services__swiper .swiper-wrapper .swiper-slide .services__card .services__logo {
+    padding: 20px 0px 0px 20px;
+    background-image: url(../images/services/Logo_blue.png);
+    background-repeat: no-repeat;
+    margin: 11px 0px 0px 20px;
+    height: 85px; 
+        
+}
+
+#services .services__swiper .swiper-wrapper .swiper-slide .services__card .services__h2 {
+    font-size: 25px;
+    line-height: 28px;
+    padding:20px 60px 0px 20px;
+}
+
+#services .services__swiper .swiper-wrapper .swiper-slide .services__card .services__text {
+    font-family: 'WorkSans-Regular';
+    font-size: 18px;
+    line-height: 28px;
+    padding:20px 0px 0px 20px;
+}
+
+#services .services__swiper .swiper-wrapper .swiper-slide .services__card .services__learn_more {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 20px;
+}
+
+#services .services__swiper .swiper-wrapper .swiper-slide .services__card .services__learn_more .services__text2 {
+    font-family: 'WorkSans-Regular';
+    font-size: 18px;
+    padding:20px 0px 0px 20px;
+}
+
+#services .services__swiper .swiper-wrapper .swiper-slide-active .services__card {
+    width: 370px;
+    height: 366px;
+    background-color: var(--primary-blue);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#services .services__swiper .swiper-wrapper .swiper-slide-active .services__card .services__logo {
+    padding: 20px 0px 0px 20px;
+    background-image: url(../images/services/1app_design.png);
+    background-repeat: no-repeat;
+    margin: 11px 0px 0px 20px;
+    height: 85px;        
+}
+
+#services .services__swiper .swiper-wrapper .swiper-slide-active .services__card .services__h2 {
+    color: var(--primary-white);
+    font-size: 25px;
+    line-height: 28px;
+    padding:20px 60px 0px 20px;
+}
+
+#services .services__swiper .swiper-wrapper .swiper-slide-active .services__card .services__text {
+    color: var(--primary-white);
+    font-family: 'WorkSans-Regular';
+    font-size: 18px;
+    line-height: 28px;
+    padding:20px 0px 0px 20px;
+}
+
+#services .services__swiper .swiper-wrapper .swiper-slide-active .services__card .services__learn_more {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 20px;
+}
+
+#services .services__swiper .swiper-wrapper .swiper-slide-active .services__card .services__learn_more .services__text2 {
+    color: var(--primary-white);
+    font-family: 'WorkSans-Regular';
+    font-size: 18px;
+    padding:20px 0px 0px 20px;
+}
+
+
+
 /*"Services end"*/
 
 /*"Milestones start"*/
@@ -345,6 +497,9 @@ h3 {
     /*"About end"*/
 
     /*"Services start"*/
+    #services .services__top .services__top_text {
+        width: 650px;
+    }
     /*"Services end"*/
 
     /*"Milestones start"*/
