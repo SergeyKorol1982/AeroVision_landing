@@ -401,11 +401,69 @@ h3 {
     padding:20px 0px 0px 20px;
 }
 
-
-
 /*"Services end"*/
 
 /*"Milestones start"*/
+
+#milestones {
+    background-color: var(--primary-blue);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 30px 0 0 0;
+    padding: 0 0 30px 0
+}
+
+#milestones .milestones__top {
+    margin: 30px 0 0 0;
+}
+
+#milestones .milestones__top .milestones__top_h3 {
+    font-family: 'WorkSans-SemiBold';
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: var(--primary-white);
+}
+#milestones .milestones__top .milestones__top_text {
+    font-family: 'WorkSans-Bold';
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--primary-white);
+    padding: 30px 0;
+}
+
+#milestones .milestones__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#milestones .milestones__main .milestones__block {
+    width: 297px;
+    height: 171px;
+    background-color: var(--primary-white);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#milestones .milestones__main .milestones__block .milestones__block_count {
+    font-family: 'WorkSans-Bold';
+    font-size: 50px;
+}
+
+#milestones .milestones__main .milestones__block .milestones__block_description {
+    font-family: 'WorkSans-SemiBold';
+    font-size: 20px;
+}
 /*"Milestones end"*/
 
 /*"Our projects start"*/
@@ -503,6 +561,42 @@ h3 {
     /*"Services end"*/
 
     /*"Milestones start"*/
+    #milestones {
+        width: 100%;
+        height: 640px;
+        margin: 100px 0 0 0;  
+    }
+    
+    #milestones .milestones__background {
+        background-image: url(../images/milestones/Rectangle\ 6.png);
+        -webkit-transform: rotate(30deg);
+    }
+    #milestones .milestones__top {
+        margin: 100px 0 0 0;
+    }
+
+    #milestones .milestones__top .milestones__top_text {
+        padding: 40px 220px;
+    }
+
+    #milestones .milestones__main {
+        flex-direction: row;
+        padding: 65px 0;
+    }
+
+    #milestones .milestones__main .milestones__block {
+        width: 220px;
+        height: 126px;
+    }
+
+    #milestones .milestones__main .milestones__block .milestones__block_count {
+        font-size: 45px;
+    }
+
+    #milestones .milestones__main .milestones__block .milestones__block_description {
+        font-size: 16px;
+    }
+
     /*"Milestones end"*/
 
     /*"Our projects start"*/
