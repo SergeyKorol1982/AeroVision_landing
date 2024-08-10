@@ -65,6 +65,14 @@ h3 {
 }
 
 /*"Header start"*/
+
+#header .bg-light {
+    background-color: var(--primary-white) !important;   
+}
+
+#header .bg-light #navbarNav .nav-item {
+    font-family: 'WorkSans-SemiBold';
+}
 /*"Header end"*/
 
 /*"About me start"*/
@@ -590,6 +598,10 @@ h3 {
 @media (min-width: 1024px) {
 
     /*"Header start"*/
+    #header .bg-light {
+        top: 20px;
+        width: 1440px; 
+    }
     /*"Header end"*/
 
     /*"About me start"*/
