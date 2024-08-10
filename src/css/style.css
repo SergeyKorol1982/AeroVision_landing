@@ -467,6 +467,114 @@ h3 {
 /*"Milestones end"*/
 
 /*"Our projects start"*/
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 0 0;
+}
+
+#projects .projects__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#projects .projects__top .projects__h3 {
+    font-family: 'WorkSans-SemiBold';
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: var(--primary-blue);
+}
+
+#projects .projects__top .projects__text {
+    font-family: 'WorkSans-SemiBold';
+    font-size: 40px; 
+}
+
+#projects .projects__button_block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 30px 0;
+}
+
+#projects .projects__button_block .projects__all_button {
+    width: 80px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--primary-blue);
+}
+
+
+#projects .projects__button_block .projects__uaux_button {
+    width: 126px;
+    height: 30px;
+    border-radius: 50px;
+    border: solid 1px var(--primary-blue);
+    background-color: var(--primary-white);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+#projects .projects__button_block .projects__design_button {
+    width: 144px;
+    height: 30px;
+    border-radius: 50px;
+    border: solid 1px var(--primary-blue);
+    background-color: var(--primary-white);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+#projects .projects__button_block .projects__wordpress-button {
+    width: 114px;
+    height: 30px;
+    border-radius: 50px;
+    border: solid 1px var(--primary-blue);
+    background-color: var(--primary-white);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+#projects .projects__button_block .projects__all_button .projects__white_text {
+    font-family: 'WorkSans-SemiBold';
+    font-size: 15px;
+    color: var(--primary-white);
+}
+
+#projects .projects__button_block .projects__uaux_button .projects__blue_text,
+#projects .projects__button_block .projects__design_button .projects__blue_text,
+#projects .projects__button_block .projects__wordpress-button .projects__blue_text {
+    font-family: 'WorkSans-SemiBold';
+    font-size: 15px;
+    color: var(--primary-blue);
+}
+
+#projects .projects__pics_block {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#projects .projects__pics_block .projects__pics {
+    width: 370px;
+}
 /*"Our projects end"*/
 
 /*"Testimonials start"*/
@@ -600,6 +708,24 @@ h3 {
     /*"Milestones end"*/
 
     /*"Our projects start"*/
+    #projects {
+        width: 1024px;
+    }
+
+    #projects .projects__top {
+        width: 600px;
+    }
+
+    #projects .projects__pics_block {
+        width: 1024px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #projects .projects__pics_block .projects__pics {
+        width: 300px;
+    }
+
     /*"Our projects end"*/
 
     /*"Testimonials start"*/
