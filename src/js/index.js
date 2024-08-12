@@ -18,8 +18,8 @@ var swiper = new Swiper(".services__swiper", {
 
 var swiper1 = new Swiper(".testimonials__swiper", {
   loop: true,
-  slidesPerView: 1,
-  spaceBetween: 0,
+  slidesPerView: 1.25,
+  spaceBetween: 30,
   centeredSlides: false,
     navigation: {
       nextEl: ".testimonials__next",
@@ -27,8 +27,8 @@ var swiper1 = new Swiper(".testimonials__swiper", {
     },
   breakpoints: {
     1024: {
-      slidesPerView: 2.5,
-      spaceBetween: 50,
+      slidesPerView: 3.2,
+      spaceBetween: 25,
       initialSlide: 0,
     },
 },

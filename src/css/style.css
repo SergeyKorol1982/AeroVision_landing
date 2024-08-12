@@ -611,6 +611,10 @@ p {
     font-size: 40px; 
 }
 
+#testimonials .testimonials__swiper_block .testimonials__swiper .swiper-wrapper {
+    left: 15px;
+}
+
 #testimonials .testimonials__swiper_block .testimonials__swiper .testimonials__card {
     display: flex;
     flex-direction: column;
@@ -795,6 +799,10 @@ p {
     /*"Our projects end"*/
 
     /*"Testimonials start"*/
+    #testimonials .testimonials__top{
+        padding: 30px 0;
+    }
+    
     /*"Testimonials end"*/
 
     /*"Contact me start"*/
