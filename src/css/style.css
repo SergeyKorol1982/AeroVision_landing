@@ -77,6 +77,42 @@ p {
 #header .bg-light #navbarNav .nav-item {
     font-family: 'WorkSans-SemiBold';
 }
+
+#header .navbar-toggler {
+    border-color: transparent;
+}
+
+#header .navbar-toggler-icon {
+    background-image: url(../images/header/menu-02nvbar_icon.png);
+    border: none;
+}
+
+#header .header__button {
+    display: none;
+}
+
+#header .header__mobile_hide {
+    display: none;
+    position: fixed;
+    width: 370px;
+    top: 80px;
+    background-color: var(--primary-white);
+    opacity: 80%; 
+}
+
+#header .header__mobile_hide .header__mobile_menu {
+    list-style: none;
+    text-align: center;
+
+}
+
+#header .header__mobile_nav-link {
+    font-family: 'WorkSans-Bold';
+    font-size: 18px;
+    color: black;
+}
+
+
 /*"Header end"*/
 
 /*"About me start"*/
@@ -690,9 +726,35 @@ p {
 @media (min-width: 1024px) {
 
     /*"Header start"*/
+    #header {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
     #header .bg-light {
         top: 20px;
         width: 1440px; 
+    }
+    #header .navbar-expand-lg .navbar-collapse {
+        margin: 0 0 0 30px;
+        justify-content: flex-end;
+    }
+
+    #header .header__button {
+        display: block;
+        width: 180px;
+        height: 50px;
+        background-color: var(--primary-blue);
+        border-radius: 50px;
+        border: none;    
+    }
+
+    #header .header__button .header__button_text {
+        color: var(--primary-white);
+        font-family: 'WorkSans-SemiBold';
+        font-size: 18px;
+
     }
     /*"Header end"*/
 
