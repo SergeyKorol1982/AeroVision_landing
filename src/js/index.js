@@ -43,6 +43,7 @@ let screenMenu = window.screen.width;
 
 hamburger.onclick=function () {
     menu.style.display = 'block';
+    menu.style.width = '100%';
     hamburger.style.display = 'none';
 }
 
