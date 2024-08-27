@@ -33,3 +33,32 @@ var swiper1 = new Swiper(".testimonials__swiper", {
     },
 },
 });
+
+// header start
+let hamburger = document.querySelector('.navbar-toggler-icon');
+// let close = document.querySelector('.cross');
+let menu = document.querySelector('.header__mobile_hide');
+let screenMenu = window.screen.width;
+// let topButtonClose = document.querySelector('#top-button');
+
+hamburger.onclick=function () {
+    menu.style.display = 'block';
+    hamburger.style.display = 'none';
+}
+
+// close.onclick=function () {
+//     menu.style.display = 'none';
+//     hamburger.style.display = 'block';
+// }
+
+// topButtonClose.onclick=function () {
+//     if (window.screen.width < 769) {
+//         menu.style.display = 'none';
+//         hamburger.style.display = 'block';
+//     }
+//     else {
+//         hamburger.style.display = 'none';
+//     }
+// }
+
+// header end
