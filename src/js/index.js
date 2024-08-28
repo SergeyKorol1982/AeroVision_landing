@@ -84,27 +84,29 @@ let emptyHelpError  = document.getElementById ("contact__form_help-empty");
 
 let submitButton = document.getElementById ("contact__button");
 
+let checkbox = document.getElementById ("contact__form_submit");
+
 let validClasses = document.getElementsByClassName ("valid");
 let invalidClasses = document.getElementsByClassName ("error");
 
 // name and help varification
 
 const textVerify = (text) => {
-  const regex = /^[a-zA-Z]{3,}$/;
+  const regex = /^[a-zA-Z]|^[0-9А-Яа-я]/;
   return regex.test(text);
 };
 
 // phone verification
 
 const phoneVerify = (number) => {
-  const regex = /^[0-9]{10}$/;
+  const regex = /^\+\d{2}\(\d{3}\)\d{3}-\d{2}-\d{2}$|/;
   return regex.test(number);
 };
 
 // email verification
 
 const emailVerify = (input) => {
-  const regex = /^[a-z0-9_]+@[a-z{3,}\.[a-z\.]{3,}$/;
+  const regex = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
   return regex.test(input);
 };
 
@@ -177,11 +179,39 @@ helpInput.addEventListener("input", () => {
 });
 
 submitButton.addEventListener ("click", () => {
-  if (validClasses.length == 4) {
+  if (validClasses.length == 4 && checkbox.checked) {
     alert("Sucsess");
   } else {
     alert("Error");
   }
 });
 // form end
-//console.log(validClasses.length);
+
+// send form start
+const TOKEN = "7533450268:AAHQFLShsY0YZbMFH4S1ZyuylLOp_DKt3so";
+const CHAT_ID = "-1002189495450";
+const URI_API = `https://api.telegram.org/bot${ TOKEN}/sendMessage`;
+
+document.getElementById('contact__form').addEventListener('submit', function(e){
+  e.preventDefault();
+  console.log("1111111111");
+  let = message = `<b>Заявка с сайта</b>\n`;
+  message += `<b>Sender: </b> ${ this.name.value }\n`;
+  message += `<b>Email: </b> ${ this.email.value }\n`;
+  message += `<b>Phone: </b> ${ this.phone.value }\n`;
+  message += `<b>Text: </b> ${ this.help.value }\n`;
+
+  axios.post(URI_API, {
+    chat_id: CHAT_ID,
+    parse_mode: 'html',
+    text: message
+  })
+  .then((res) => {
+    this.name.value = "";
+    this.email.value = "";
+    this.phone.value = "";
+    this.help.value = "";
+  })
+});
+
+// send form end

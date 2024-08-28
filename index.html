@@ -358,35 +358,33 @@
                 </div>
             </div>
             <div class="contact__form_container">
-                <form autocomplete="off" class="contact__form">
+                <form autocomplete="off" id="contact__form">
                     <div class="contact__input_section">
-                        <input type="text" placeholder="Name*" id="contact__form_name-input" required>
+                        <input type="text" placeholder="Name*" name="name" id="contact__form_name-input" required>
                         <span id="contact__form_name-error" class="hide required-color error-message ">Invalid Name</span>
                         <span id="contact__form_name-empty" class="hide required-color error-message ">Name Cannot Be Empty</span>
                     </div>
                     <div class="contact__input_section">
-                        <input type="text" placeholder="Email Address*" id="contact__form_mail-input" required>
+                        <input type="text" placeholder="Email Address*" name="email" id="contact__form_mail-input" required>
                         <span id="contact__form_mail-error" class="hide required-color error-message ">Invalid E-mail</span>
                         <span id="contact__form_mail-empty" class="hide required-color error-message ">E-mail Cannot Be Empty</span>
                     </div>
                     <div class="contact__input_section">
-                        <input type="text" placeholder="Phone number*" id="contact__form_phone-input" required>
+                        <input type="text" placeholder="+380301234567" name="phone" id="contact__form_phone-input" required>
                         <span id="contact__form_phone-error" class="hide required-color error-message ">Invalid Name</span>
                         <span id="contact__form_phone-empty" class="hide required-color error-message ">Name Cannot Be Empty</span>
                     </div>
                     <div class="contact__input_section">
-                        <input type="text" placeholder="How can we help you?*" id="contact__form_help-input" required>
+                        <input type="text" placeholder="How can we help you?*" name="help" id="contact__form_help-input" required>
                         <span id="contact__form_help-error" class="hide required-color error-message ">Invalid Name</span>
                         <span id="contact__form_help-empty" class="hide required-color error-message ">Name Cannot Be Empty</span>
                     </div>
+                    <label for="contact__form_submit">
+                        <input id="contact__form_submit" type="checkbox">
+                        By submitting, i’m agreed to the Terms & Conditons
+                    </label>
+                    <input id="contact__button" type="submit" value="submit"></input>
                 </form>
-                <!-- <label for="contact__form_submit">
-                    <input class="contact__form_submit" type="checkbox">
-                    By submitting, i’m agreed to the Terms & Conditons
-                </label> -->
-                <button id="contact__button">
-                    <p class="contact__button_text">Request Now</p>
-                </button>
             </div>         
         </section>
         <!--"Contact me end"-->
@@ -415,7 +413,7 @@
             </div>
         </section>
         <!--"Footer end"-->
-
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
