@@ -7,14 +7,78 @@
 
         <title>AEROVISION</title>
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" crossorigin="anonymous" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous"
+        />
 
         <link rel="stylesheet" href="src/css/icomoon.css" />
         <link rel="stylesheet" href="src/css/style.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     </head>
     <body>
+        <section id="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                    <img src="./src/images/logo.png" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">About me<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Services<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Blog<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Contact me<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <button class="header__button">
+                <p class="header__button_text">Let`s chat</p>
+            </button>
+            <div class="header__mobile_hide">
+                <div class="header__mobile_hide_close">
+                    <a class="header__close_button">
+                        <img>
+                    </a>
+                </div>
+                <ul class="header__mobile_menu">
+                    <li class="header__mobile_li active">
+                        <img src="./src/images/logo.png" />
+                    <li class="header__mobile_li active">
+                        <a class="header__mobile_nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="header__mobile_li active">
+                        <a class="header__mobile_nav-link" href="#">About me<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="header__mobile_li active">
+                        <a class="header__mobile_nav-link" href="#">Services<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="header__mobile_liactive">
+                        <a class="header__mobile_nav-link" href="#">Blog<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="header__mobile_li active">
+                        <a class="header__mobile_nav-link" href="#">Contact me<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
         <!--"Header start"-->
+
         <!--"Header end"-->
 
         <!--"About me start"-->
@@ -41,25 +105,315 @@
         </section>
 
         <!--"About me end"-->
+        <!--"Software start"-->
+        <section id="software">
+            <div class="software__block">
+                <img class="software__block_img" src="./src/images/software/logo-1jquery.png" />
+                <img class="software__block_img" src="./src/images/software/logo-2worldpress.png" />
+                <img class="software__block_img" src="./src/images/software/logo-3less.png" />
+                <img class="software__block_img" src="./src/images/software/logo-5saas.png" />
+                <img class="software__block_img" src="./src/images/software/logo-6spotyfy.png" />
+            </div>
+        </section>
+        <!--"Software end"-->
+        <!--"About end"-->
+        <section id="about-me2">
+            <div class="about-me2__photo">
+                <img class="about-me2__victor" src="./src/images/about_me/victor_photo2.png" />
+            </div>
+            <div class="about-me2__text-block">
+                <h3 class="about-me2__blue">ABOUT ME</h3>
+                <h2 class="about-me2__blue">20 Year’s Experience on</h2>
+                <h2>Product Design</h2>
+                <p class="about-me2__hello">
+                    Hello there! I'm Robert Junior. I specialize in web design and development, and I'm deeply passionate and committed to my craft. With 20 years of experience as a professional
+                    graphic designer
+                </p>
+                <div class="about-me2__button_block">
+                    <button class="about-me__hire">
+                        <p class="about-me__hire_text">Main Skills</p>
+                    </button>
+                    <button class="about-me__cv">
+                        <p class="about-me__cv_text">Awards</p>
+                    <button class="about-me__cv">
+                        <p class="about-me__cv_text">Education</p>
+                    </button>
+                </div>
+                <div class="about-me2__progress_block">
+                    <p class="about-me2__progress_text">User Experience Design - UI/UX</p>
+                    <progress class="about-me2__progress" max="100", value="95"></progress>
+                    <p class="about-me2__progress_text">Web&User Interface Design</p>
+                    <progress class="about-me2__progress" max="100", value="85"></progress>
+                    <p class="about-me2__progress_text">Interaction Design - Animation</p>
+                    <progress class="about-me2__progress" max="100", value="75"></progress>
+                </div>
+            </div>
+        </section>
+        <!--"About end"-->
 
         <!--"Services start"-->
+        <section id="services">
+            <div class="services__top">
+                <h3 class="services__top_text_h3">SERVICES</h3>
+                <h2 class="services__top_text_h2">Exploring My Design Skills</h2>
+                <div>
+                    <p class="services__top_text">We transform your ideas into a distinctive web project that both inspires you and captivates your customers</p>
+                </div>
+            </div>
+            <div>
+                <div class="swiper services__swiper">
+                    <div class="services__buttons">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="services__card">
+                                <div class="services__logo"></div>
+                                <h2 class="services__h2">Website / App DesignUX / UI Design</h2>
+                                <p class="services__text">Creating Engaging Digital Experiences for Websites and Apps through UX/UI Design</p>
+                                <div class="services__learn_more">
+                                    <p class="services__text2">Learn more</p>
+                                    <img src="./src/images/services/Arrow 1.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="services__card">
+                                <div class="services__logo"></div>
+                                <h2 class="services__h2">Strategic Marketing and Creative Content</h2>
+                                <p class="services__text">Elevating Brands and Engagement through Strategic Marketing and Creative Conten</p>
+                                <div class="services__learn_more">
+                                    <p class="services__text2">Learn more</p>
+                                    <img src="./src/images/services/Arrow 1.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="services__card">
+                                <div class="services__logo"></div>
+                                <h2 class="services__h2">Multivendor eCommerce Website Solutions</h2>
+                                <p class="services__text">Unlocking the World of Multivendor eCommerce Websites</p>
+                                <div class="services__learn_more">
+                                    <p class="services__text2">Learn more</p>
+                                    <img src="./src/images/services/Arrow 1.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="services__card">
+                                <div class="services__logo"></div>
+                                <h2 class="services__h2">Crafting Brand Strategies and Artistic Direction</h2>
+                                <p class="services__text">Delving Deep into Crafting Comprehensive Brand Strategies and Offering Expert Guidance</p>
+                                <div class="services__learn_more">
+                                    <p class="services__text2">Learn more</p>
+                                    <img src="./src/images/services/Arrow 1.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+        </section>
         <!--"Services end"-->
 
         <!--"Milestones start"-->
+        <section id="milestones">
+            <div class="milestones__background"></div>
+            <div class="milestones__top">
+                <h3 class="milestones__top_h3">OUR MILESTONES</h3>
+                <p class="milestones__top_text">What sets our studio apart for your projects?</p>
+            </div>
+            <div class="milestones__main">
+                <div class="milestones__block">
+                    <p class="milestones__block_count">8300+</p>
+                    <p class="milestones__block_description">Figma ipsum component variant main layer. Hand.</p>
+                </div>
+                <div class="milestones__block">
+                    <p class="milestones__block_count">100%</p>
+                    <p class="milestones__block_description">Figma ipsum component variant main layer. Union.</p>
+                </div>
+                <div class="milestones__block">
+                    <p class="milestones__block_count">3.5K</p>
+                    <p class="milestones__block_description">Figma ipsum component variant main layer.</p>
+                </div>
+                <div class="milestones__block">
+                    <p class="milestones__block_count">240+</p>
+                    <p class="milestones__block_description">Figma ipsum component variant main layer.</p>
+                </div>  
+        </section>
         <!--"Milestones end"-->
 
         <!--"Our projects start"-->
+        <section id="projects">
+            <div class="projects__top">
+                <h3 class="projects__h3">OUR PROJECTS</h3>
+                <p class="projects__text">Presenting My Design Portfolio and Case Studies</p>
+            </div>
+            <div class="projects__button_block">
+                <button class="projects__all_button">
+                    <p class="projects__white_text">All</p>
+                </button>
+                <button class="projects__uaux_button">
+                    <p class="projects__blue_text">UA/UX design</p>
+                </button>
+                <button class="projects__design_button">
+                    <p class="projects__blue_text">Branding Design</p>
+                </button>
+                <button class="projects__wordpress-button">
+                    <p class="projects__blue_text">Wordpress</p>
+                </button>
+            </div>
+            <div class="projects__pics_block">
+                <img class="projects__pics" src="./src/images/projects/preview1expence.png">
+                <img class="projects__pics" src="./src/images/projects/preview2snacks.png">
+                <img class="projects__pics" src="./src/images/projects/preview3welcome.png">
+                <img class="projects__pics" src="./src/images/projects/preview4mockups.png">
+                <img class="projects__pics" src="./src/images/projects/preview5tracking.png">
+                <img class="projects__pics" src="./src/images/projects/preview6generators.png"> 
+            </div>
+        </section>
         <!--"Our projects end"-->
 
         <!--"Testimonials start"-->
+        <section id="testimonials">
+            <div class="testimonials__top">
+                <h3 class="testimonials__h3">TESTIMONIALS</h3>
+                <p class="testimonials__text">The Trust From Clients</p>
+            </div>
+            <div class="testimonials__swiper_block">
+                <div class="swiper testimonials__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonials__card">
+                                <img src="./src/images/testimonials/1svannah.png">
+                                <img src="./src/images/testimonials/stars.png">
+                                <div class="testimonials__card_block">
+                                    <p class="testimonials__card_text">Lorem ipsum dolor sit amet consectetur. Nibh porttitor aliquet tellus eget egestas. Enim ultrices dictumst tortor in eget neque vestibulum potenti tempus</p>
+                                </div>    
+                                <p class="testimonials__name">SAVANNAH NGUYEN</p>
+                                <p class="testimonials__job">President of Sales</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonials__card">
+                                <img src="./src/images/testimonials/2jenny.png">
+                                <img src="./src/images/testimonials/stars.png">
+                                <div class="testimonials__card_block">
+                                    <p class="testimonials__card_text">Lorem ipsum dolor sit amet consectetur. Nibh porttitor aliquet tellus eget egestas. Enim ultrices dictumst tortor in eget neque vestibulum potenti tempus</p>
+                                </div>    
+                                <p class="testimonials__name">JENNY WILSON</p>
+                                <p class="testimonials__job">Medical Assistant</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonials__card">
+                                <img src="./src/images/testimonials/3esther.png">
+                                <img src="./src/images/testimonials/stars.png">
+                                <div class="testimonials__card_block">
+                                    <p class="testimonials__card_text">Lorem ipsum dolor sit amet consectetur. Nibh porttitor aliquet tellus eget egestas. Enim ultrices dictumst tortor in eget neque vestibulum potenti tempus</p>
+                                </div>    
+                                <p class="testimonials__name">EASTER HOWARD</p>
+                                <p class="testimonials__job">Nursing Assistant</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonials__card">
+                                <img src="./src/images/testimonials/4cameron.png">
+                                <img src="./src/images/testimonials/stars.png">
+                                <div class="testimonials__card_block">
+                                    <p class="testimonials__card_text">Lorem ipsum dolor sit amet consectetur. Nibh porttitor aliquet tellus eget egestas. Enim ultrices dictumst tortor in eget neque vestibulum potenti tempus</p>
+                                </div>    
+                                <p class="testimonials__name">CAMERON WILLIAMSON</p>
+                                <p class="testimonials__job">Marketing Coordinator</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next testimonials__next"></div>
+                    <div class="swiper-button-prev testimonials__prev"></div>
+                </div>
+            </div>
+        </section>
         <!--"Testimonials end"-->
 
         <!--"Contact me start"-->
+        <section id="contact">
+            <div class="contact__top">
+                <h3 class="contact__h3">CONTACT ME</h3>
+                <p class="contact__text">Request Free Consultancy</p>
+            </div>
+            <div class="contact__address">
+                <div class="contact__address_top">
+                    <p class="contact__address_top_1" >Hotline 24/7</p>
+                    <p class="contact__address_top_2" >(+23) 5535 68 68</p>
+                </div>
+                <div class="contact__address_data">
+                    <p class="contact__address_data_text">
+                        <b>Address:</b> 2972 Westheimer Rd. Santa Ana, Illinois 85486 <br>
+                        <b>Email:</b> nevaeh.simmons@example.com <br>
+                        <b>Fax:</b> (702) 555-0122 <br>
+                        <b>Work Hour:</b> Mon - Sat: 9:00 - 18:00 <br>
+                    </p>
+                </div>
+            </div>
+            <div class="contact__form_container">
+                <form autocomplete="off" id="contact__form">
+                    <div class="contact__input_section">
+                        <input type="text" placeholder="Name*" name="name" id="contact__form_name-input" required>
+                        <span id="contact__form_name-error" class="hide required-color error-message ">Invalid Name</span>
+                        <span id="contact__form_name-empty" class="hide required-color error-message ">Name Cannot Be Empty</span>
+                    </div>
+                    <div class="contact__input_section">
+                        <input type="text" placeholder="Email Address*" name="email" id="contact__form_mail-input" required>
+                        <span id="contact__form_mail-error" class="hide required-color error-message ">Invalid E-mail</span>
+                        <span id="contact__form_mail-empty" class="hide required-color error-message ">E-mail Cannot Be Empty</span>
+                    </div>
+                    <div class="contact__input_section">
+                        <input type="text" placeholder="+380301234567" name="phone" id="contact__form_phone-input" required>
+                        <span id="contact__form_phone-error" class="hide required-color error-message ">Invalid Name</span>
+                        <span id="contact__form_phone-empty" class="hide required-color error-message ">Name Cannot Be Empty</span>
+                    </div>
+                    <div class="contact__input_section">
+                        <input type="text" placeholder="How can we help you?*" name="help" id="contact__form_help-input" required>
+                        <span id="contact__form_help-error" class="hide required-color error-message ">Invalid Name</span>
+                        <span id="contact__form_help-empty" class="hide required-color error-message ">Name Cannot Be Empty</span>
+                    </div>
+                    <label for="contact__form_submit">
+                        <input id="contact__form_submit" type="checkbox">
+                        By submitting, i’m agreed to the Terms & Conditons
+                    </label>
+                    <input id="contact__button" type="submit" value="submit"></input>
+                </form>
+            </div>         
+        </section>
         <!--"Contact me end"-->
 
         <!--"Footer start"-->
+        <section id="footer">
+            <div class="footer__logo">
+                <img class="footer__logo_img" src="./src/images/footer/logofooter.png">
+                <!-- <p class="footer__logo_text">AeroVision</p> -->
+            </div>
+            <p class="footer__text">© Copyright 2023. All Rights Reserved.</p>
+            <div class="footer__social">
+                <p class="footer__social_text">FOLLOW US</p>
+                <a>
+                    <img src="./src/images/footer/icon_facebook.png">
+                </a>
+                <a>
+                    <img src="./src/images/footer/icon_X.png">
+                </a>
+                <a>
+                    <img src="./src/images/footer/icon_linkedin.png">
+                </a>
+                <a>
+                    <img src="./src/images/footer/icon_email.png">
+                </a>
+            </div>
+        </section>
         <!--"Footer end"-->
-
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
