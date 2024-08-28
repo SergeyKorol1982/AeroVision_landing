@@ -44,6 +44,7 @@ let screenMenu = window.screen.width;
 hamburger.onclick=function () {
     menu.style.display = 'block';
     menu.style.width = '100%';
+    menu.style.top = '0';
     hamburger.style.display = 'none';
 }
 
@@ -63,3 +64,124 @@ hamburger.onclick=function () {
 // }
 
 // header end
+// form start 
+
+let nameInput = document.getElementById ("contact__form_name-input");
+let nameError = document.getElementById ("contact__form_name-error");
+let emptyNameError = document.getElementById ("ontact__form_name-empty");
+
+let emailInput = document.getElementById ("contact__form_mail-input");
+let emailError = document.getElementById ("contact__form_mail-error");
+let emptyEmailError = document.getElementById ("ontact__form_mail-empty");
+
+let phoneInput = document.getElementById ("contact__form_phone-input");
+let phoneError = document.getElementById ("contact__form_phone-error");
+let emptyPhoneError  = document.getElementById ("contact__form_phone-empty");
+
+let helpInput = document.getElementById ("contact__form_help-input");
+let helpError = document.getElementById ("contact__form_help-error");
+let emptyHelpError  = document.getElementById ("contact__form_help-empty");
+
+let submitButton = document.getElementById ("contact__button");
+
+let validClasses = document.getElementsByClassName ("valid");
+let invalidClasses = document.getElementsByClassName ("error");
+
+// name and help varification
+
+const textVerify = (text) => {
+  const regex = /^[a-zA-Z]{3,}$/;
+  return regex.test(text);
+};
+
+// phone verification
+
+const phoneVerify = (number) => {
+  const regex = /^[0-9]{10}$/;
+  return regex.test(number);
+};
+
+// email verification
+
+const emailVerify = (input) => {
+  const regex = /^[a-z0-9_]+@[a-z{3,}\.[a-z\.]{3,}$/;
+  return regex.test(input);
+};
+
+
+const emptyUpdate = (inputReference,emptyErrorReferense,otherErrorReference) => {
+  if (!inputReference.value) {
+    emptyErrorReferense.classList.remove("hide");
+    emptyErrorReferense.classList.add("hide");
+    inputReference.classList.add("error");
+  }
+  else {
+    emptyErrorReferense.classList.add("hide");
+  }
+};
+// for styling 
+const errorUpdate = (inputReference, errorReference) => {
+  errorReference.classList.remove("hide");
+  inputReference.classList.remove("valid");
+  inputReference.classList.add("error");
+};
+// for no errors
+const validInput = (inputReference) => {
+  inputReference.classList.remove("error");
+  inputReference.classList.add("valid");
+};
+
+// name
+nameInput.addEventListener("input", () => {
+  if (textVerify(nameInput.value)) {
+    nameError.classList.add("hide");
+    validInput(nameInput);
+  } else {
+    errorUpdate (nameInput,nameError);
+    emptyUpdate (nameInput,emptyNameError,nameError);
+  }
+});
+
+// mail
+emailInput.addEventListener("input", () => {
+  if (textVerify(emailInput.value)) {
+    emailError.classList.add("hide");
+    validInput(emailInput);
+  } else {
+    errorUpdate (emailInput,emailError);
+    emptyUpdate (emailInput,emptyEmailError,emailError);
+  }
+});
+
+// phone
+
+phoneInput.addEventListener("input", () => {
+  if (phoneVerify(phoneInput.value)) {
+    phoneError.classList.add("hide");
+    validInput(phoneInput);
+  } else {
+    errorUpdate (phoneInput,phoneError);
+    emptyUpdate (phoneInput,emptyPhoneError,phoneError); 
+  }
+});
+
+// help us
+helpInput.addEventListener("input", () => {
+  if (textVerify(helpInput.value)) {
+    helpError.classList.add("hide");
+    validInput(helpInput);
+  } else {
+    errorUpdate (helpInput,helpError);
+    emptyUpdate (helpInput,emptyHelpError,helpError);
+  }
+});
+
+submitButton.addEventListener ("click", () => {
+  if (validClasses.length == 4) {
+    alert("Sucsess");
+  } else {
+    alert("Error");
+  }
+});
+// form end
+//console.log(validClasses.length);

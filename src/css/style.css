@@ -747,36 +747,71 @@ p {
 #contact .contact__form_container .contact__form {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 15px;
 }
 
-#contact .contact__form_container .contact__form .contact__form_field {
-    font-family: 'WorkSans-Regular';
-    font-size: 16px;
-    line-height: 20px;
-    color:#666666;
-}
-
-#contact .contact__form_container .contact__form .contact__form_field {
+#contact .contact__form_container .contact__form .contact__input_section #contact__form_name-input {
     width: 370px;
     height: 50px;
     border-radius: 5px;
     border: none;
+    font-family: 'WorkSans-Regular';
+    font-size: 16px;
+    line-height: 20px;
+    color: #666666;
+    padding: 0 0 0 10px;
 }
 
-#contact .contact__form_container .contact__button {
-    background-color: #00489A;
+#contact .contact__form_container .contact__form .contact__input_section #contact__form_mail-input {
     width: 370px;
     height: 50px;
-    border-radius: 50px;
+    border-radius: 5px;
     border: none;
+    font-family: 'WorkSans-Regular';
+    font-size: 16px;
+    line-height: 20px;
+    color: #666666;
+    padding: 0 0 0 10px;
 }
 
-#contact .contact__form_container .contact__button .contact__button_text {
-    font-family: 'WorkSans-Bold';
-    font-size: 20px;
-    color: var(--primary-white);
+#contact .contact__form_container .contact__form .contact__input_section #contact__form_phone-input {
+    width: 370px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'WorkSans-Regular';
+    font-size: 16px;
+    line-height: 20px;
+    color: #666666;
+    padding: 0 0 0 10px;
+}
+
+#contact .contact__form_container .contact__form .contact__input_section #contact__form_help-input {
+    width: 370px;
+    height: 142px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'WorkSans-Regular';
+    font-size: 16px;
+    line-height: 20px;
+    color: #666666;
+    padding: 0 0 94px 10px;
+}
+
+#contact .contact__form_container .contact__form .required-color {
+    color: #ff4747;
+}
+
+#contact .contact__form_container .contact__form .error {
+    color: #ff4747;
+}
+
+#contact .contact__form_container .contact__form .valid {
+    color: #222222;
+}
+
+#contact .contact__form_container .contact__form .hide {
+    display: none;
 }
 /*"Contact me end"*/
 
