@@ -194,7 +194,6 @@ const URI_API = `https://api.telegram.org/bot${ TOKEN}/sendMessage`;
 
 document.getElementById('contact__form').addEventListener('submit', function(e){
   e.preventDefault();
-  console.log("1111111111");
   let = message = `<b>Заявка с сайта</b>\n`;
   message += `<b>Sender: </b> ${ this.name.value }\n`;
   message += `<b>Email: </b> ${ this.email.value }\n`;
